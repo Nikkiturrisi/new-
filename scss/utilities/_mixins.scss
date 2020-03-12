@@ -1,0 +1,24 @@
+//Center
+
+@mixin center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Media query
+
+@mixin mq {
+  @media (min-width: $break-md){
+    @content};
+}
+
+// Flexbox
+
+@mixin flex($dir: null, $wrap: null, $just: space-around, $alin: null){
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $alin;
+}
