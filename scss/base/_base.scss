@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: $font-stack-primary;
 }
 
 body {
@@ -57,4 +58,18 @@ a {
 
 .project_meta {
   width:100%;
+}
+
+.logo{
+    font-size: 3em;
+    letter-spacing: 200px;
+}
+
+.toggle {
+  font-size: 3em;
+}
+.toggle:hover {
+  transform: rotate(90deg);
+  transition: 1s ease;
+  tranform-origin: center;
 }

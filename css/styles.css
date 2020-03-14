@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Verdana", sans-serif;
 }
 
 body {
@@ -55,6 +56,20 @@ a {
 
 .project_meta {
   width: 100%;
+}
+
+.logo {
+  font-size: 3em;
+}
+
+.toggle {
+  font-size: 3em;
+}
+
+.toggle:hover {
+  transform: rotate(90deg);
+  transition: 1s ease;
+  tranform-origin: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
