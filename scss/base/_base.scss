@@ -61,15 +61,17 @@ a {
 }
 
 .logo{
-    font-size: 3em;
+    font-size: 5em;
     letter-spacing: 200px;
 }
 
-.toggle {
-  font-size: 3em;
+.plus {
+  height: 50px;
+  width: 50px;
 }
-.toggle:hover {
+
+.plus:hover {
   transform: rotate(90deg);
   transition: 1s ease;
-  tranform-origin: center;
+  tranform-origin: 50% 50%;
 }
