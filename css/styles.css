@@ -17,6 +17,46 @@ a {
   text-decoration: none;
 }
 
+.site-header {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin: 0 20px;
+}
+
+.primary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (min-width: 970px) {
+  .primary {
+    flex-wrap: nowrap;
+  }
+}
+
+.lt_item,
+.rt_item {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 10px;
+  padding: 20px;
+}
+.lt_img,
+.rt_img {
+  display: block;
+  width: 100%;
+}
+
+.project_meta {
+  width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

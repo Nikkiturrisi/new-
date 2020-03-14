@@ -8,6 +8,11 @@
 
 // Media query
 
+@mixin mq_s {
+  @media (min-width: $break-sm){
+    @content};
+}
+
 @mixin mq {
   @media (min-width: $break-md){
     @content};
