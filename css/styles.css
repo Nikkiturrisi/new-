@@ -46,7 +46,7 @@ a {
 
 @media (min-width: 970px) {
   .row_2 {
-    max-width: 75%;
+    max-width: 80%;
     align-items: center;
     margin: 0 auto;
   }
@@ -116,6 +116,12 @@ a {
   transform: rotate(90deg);
   transition: 1s ease;
   transform-origin: 50% 50%;
+}
+
+.information {
+  line-height: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
