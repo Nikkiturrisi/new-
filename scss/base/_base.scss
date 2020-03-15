@@ -20,16 +20,18 @@ a {
 
 .site-header {
   display: block;
+  padding-top: 1.5em;
 }
 
-.row{
+.row {
   display:flex;
   justify-content:space-between;
   padding:0 20px;
   margin: 0 20px;
 }
 
-.primary{
+.primary,
+.row_3{
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -39,20 +41,33 @@ a {
   }
 }
 
+.row_2{
+  @include mq{
+    max-width: 80%;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+
 .lt_item,
-.rt_item {
+.rt_item,
+.lt_r2_item,
+.lt_r3_item,
+.rt_r3_item {
   display: flex;
   flex-direction: column;
   max-width:100%;
   margin: 0 10px;
   padding:20px;
   @include mq{
-    max-width: 50%;
   }
 }
 
 .lt_img,
-.rt_img {
+.rt_img,
+.lt_r3_img,
+.rt_r3_img {
   display: block;
   width: 100%;
 }
@@ -63,21 +78,29 @@ a {
 
 
 .plus {
-  height: 50px;
-  width: 50px;
+  height: 1.5em;
+  width: auto;
+  @include mq{
+    height: 2.7em;
+  }
 }
 
 .plus svg {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 1.5em;
+  width: auto;
+  @include mq{
+    height: 2.7em;
+  }
 }
 
 .logo svg {
   display: block;
-  height: 50px;
+  height: 1.5em;
   width: auto;
-
+  @include mq{
+    height: 2.7em;
+  }
 }
 
 .logo {
@@ -89,4 +112,10 @@ a {
   transform: rotate(90deg);
   transition: 1s ease;
   transform-origin: 50% 50%;
+}
+
+.information{
+  line-height: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: .03em;
 }

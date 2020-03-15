@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Verdana", sans-serif;
+  font-family: "Avenir", sans-serif;
 }
 
 body {
@@ -20,6 +20,7 @@ a {
 
 .site-header {
   display: block;
+  padding-top: 1.5em;
 }
 
 .row {
@@ -29,35 +30,43 @@ a {
   margin: 0 20px;
 }
 
-.primary {
+.primary,
+.row_3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
 }
 @media (min-width: 970px) {
-  .primary {
+  .primary,
+.row_3 {
     flex-wrap: nowrap;
   }
 }
 
+@media (min-width: 970px) {
+  .row_2 {
+    max-width: 75%;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
 .lt_item,
-.rt_item {
+.rt_item,
+.lt_r2_item,
+.lt_r3_item,
+.rt_r3_item {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   margin: 0 10px;
   padding: 20px;
 }
-@media (min-width: 970px) {
-  .lt_item,
-.rt_item {
-    max-width: 50%;
-  }
-}
-
 .lt_img,
-.rt_img {
+.rt_img,
+.lt_r3_img,
+.rt_r3_img {
   display: block;
   width: 100%;
 }
@@ -67,20 +76,35 @@ a {
 }
 
 .plus {
-  height: 50px;
-  width: 50px;
+  height: 1.5em;
+  width: auto;
+}
+@media (min-width: 970px) {
+  .plus {
+    height: 2.7em;
+  }
 }
 
 .plus svg {
   display: block;
-  height: 50px;
-  width: 50px;
+  height: 1.5em;
+  width: auto;
+}
+@media (min-width: 970px) {
+  .plus svg {
+    height: 2.7em;
+  }
 }
 
 .logo svg {
   display: block;
-  height: 50px;
+  height: 1.5em;
   width: auto;
+}
+@media (min-width: 970px) {
+  .logo svg {
+    height: 2.7em;
+  }
 }
 
 .logo {
