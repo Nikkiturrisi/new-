@@ -18,6 +18,13 @@ a {
   text-decoration: none;
 }
 
+h3,
+h4,
+p {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
 .site-header {
   display: block;
   padding-top: 1.5em;
@@ -73,6 +80,7 @@ a {
 
 .project_meta {
   width: 100%;
+  line-height: 1em;
 }
 
 .plus {
