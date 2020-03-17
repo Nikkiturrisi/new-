@@ -126,11 +126,6 @@ p {
   }
 }
 
-.logo {
-  height: 50px;
-  width: 50px;
-}
-
 .plus:hover {
   transform: rotate(90deg);
   transition: 1s ease;
@@ -138,15 +133,22 @@ p {
 }
 
 .nav_bar {
-  padding-top: 2em;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdown {
   display:flex;
+  flex-direction: column;
   justify-content: space-around;
   text-transform: uppercase;
+  line-height: 1.9em;
   letter-spacing:.05em;
-  margin: 0 15px;
+  margin: 0 30px;
+  @include mq_s{
+    flex-direction: row;
+  }
 }
 
 
