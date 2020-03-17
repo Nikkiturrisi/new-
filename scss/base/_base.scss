@@ -16,6 +16,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 h3,
@@ -135,6 +136,19 @@ p {
   transition: 1s ease;
   transform-origin: 50% 50%;
 }
+
+.nav_bar {
+  padding-top: 2em;
+}
+
+.dropdown {
+  display:flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  letter-spacing: 3em;
+}
+
+
 
 .inquire {
   padding-top: 100px;
