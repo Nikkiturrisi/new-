@@ -22,7 +22,8 @@ h3,
 h4,
 p {
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
 }
 
 
@@ -35,7 +36,7 @@ p {
   display:flex;
   justify-content:space-between;
   padding:0 20px;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .primary,
@@ -43,7 +44,6 @@ p {
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
-  align-items: center;
   @include mq{
     flex-wrap: nowrap;
   }
@@ -62,7 +62,10 @@ p {
 .rt_item,
 .lt_r2_item,
 .lt_r3_item,
-.rt_r3_item {
+.rt_r3_item,
+.page_1_img_1,
+.page_1_img_2,
+.page_1_img_3 {
   display: flex;
   flex-direction: column;
   max-width:100%;
@@ -75,20 +78,30 @@ p {
 .lt_img,
 .rt_img,
 .lt_r3_img,
-.rt_r3_img {
+.rt_r3_img,
+.page_1_rt_img,
+.page_1_lt_img,
+.page_1_bt_img {
   display: block;
   width: 100%;
 }
 
 .project_meta {
   width:100%;
-  line-height: 1em;
+  line-height: .5em;
 }
 
+.product_info{
+  padding: 20px 35px;
+  line-height: 1.5em;
+  padding-bottom: 200px;
+}
 
 .plus {
   height: 1.5em;
   width: auto;
+  position: fixed;
+  right: 30px;
   @include mq{
     height: 2.7em;
   }
@@ -121,6 +134,10 @@ p {
   transform: rotate(90deg);
   transition: 1s ease;
   transform-origin: 50% 50%;
+}
+
+.inquire {
+  padding-top: 100px;
 }
 
 .information{
