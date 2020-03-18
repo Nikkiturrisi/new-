@@ -132,9 +132,15 @@ p {
   transform-origin: 50% 50%;
 }
 
+.plus:hover + .nav_bar, .nav_bar:hover {
+  display: block;
+  transition: 3s ease-in-out;
+}
+
+
 .nav_bar {
   padding-top: 3em;
-  display: flex;
+  display: none;
   flex-direction: column;
   @include mq{
 
@@ -163,8 +169,4 @@ p {
   line-height: 1.7em;
   text-transform: uppercase;
   letter-spacing: .03em;
-}
-
-#nav_bar {
-  transform: translateY(-200%); /* normal, hidden state */
 }
