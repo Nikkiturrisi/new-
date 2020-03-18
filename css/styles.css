@@ -143,7 +143,7 @@ p {
 
 .nav_bar {
   padding-top: 3em;
-  display: none;
+  display: flex;
   flex-direction: column;
 }
 .dropdown {
@@ -158,6 +158,12 @@ p {
 @media (min-width: 768px) {
   .dropdown {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown a {
+    margin: 0 15px;
   }
 }
 

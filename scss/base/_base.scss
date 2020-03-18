@@ -34,7 +34,6 @@ p {
 }
 
 .row {
-  display:flex;
   justify-content:space-between;
   padding:0 20px;
   margin: 0 10px;
@@ -45,13 +44,13 @@ p {
   display: flex;
   flex-direction:row;
   flex-wrap: wrap;
-  @include mq{
+  @include mq_s{
     flex-wrap: nowrap;
   }
 }
 
 .row_2{
-  @include mq{
+  @include mq_s{
     max-width: 80%;
     align-items: center;
     margin: 0 auto;
@@ -72,7 +71,7 @@ p {
   max-width:100%;
   margin: 0 10px;
   padding:20px;
-  @include mq{
+  @include mq_s{
   }
 }
 
@@ -103,8 +102,7 @@ p {
   width: auto;
   position: fixed;
   right: 30px;
-  @include mq{
-    height: 2.7em;
+  @include mq_s{
   }
 }
 
@@ -112,8 +110,7 @@ p {
   display: block;
   height: 1.5em;
   width: auto;
-  @include mq{
-    height: 2.7em;
+  @include mq_s{
   }
 }
 
@@ -121,8 +118,7 @@ p {
   display: block;
   height: 1.5em;
   width: auto;
-  @include mq{
-    height: 2.7em;
+  @include mq_s{
   }
 }
 
@@ -140,7 +136,7 @@ p {
 
 .nav_bar {
   padding-top: 3em;
-  display: none;
+  display: flex;
   flex-direction: column;
   @include mq{
 
@@ -160,6 +156,11 @@ p {
   }
 }
 
+.dropdown a {
+    @include mq_s{
+    margin: 0 1em;
+}
+}
 
 .inquire {
   padding-top: 100px;
