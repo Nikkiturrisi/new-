@@ -136,6 +136,9 @@ p {
   padding-top: 3em;
   display: flex;
   flex-direction: column;
+  @include mq{
+
+  }
 }
 
 .dropdown {
@@ -152,7 +155,6 @@ p {
 }
 
 
-
 .inquire {
   padding-top: 100px;
 }
@@ -161,4 +163,8 @@ p {
   line-height: 1.7em;
   text-transform: uppercase;
   letter-spacing: .03em;
+}
+
+#nav_bar {
+  transform: translateY(-200%); /* normal, hidden state */
 }

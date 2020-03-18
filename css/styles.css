@@ -141,7 +141,6 @@ p {
   display: flex;
   flex-direction: column;
 }
-
 .dropdown {
   display: flex;
   flex-direction: column;
@@ -165,6 +164,11 @@ p {
   line-height: 1.7em;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+}
+
+#nav_bar {
+  transform: translateY(-200%);
+  /* normal, hidden state */
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
