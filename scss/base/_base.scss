@@ -37,6 +37,7 @@ p {
   justify-content:space-between;
   padding:0 20px;
   margin: 0 10px;
+  display: flex;
 }
 
 .primary,
@@ -110,16 +111,13 @@ p {
   display: block;
   height: 1.5em;
   width: auto;
-  @include mq_s{
-  }
 }
 
 .logo svg {
   display: block;
   height: 1.5em;
   width: auto;
-  @include mq_s{
-  }
+
 }
 
 .plus:hover {
@@ -130,17 +128,21 @@ p {
 
 .plus:hover + .nav_bar, .nav_bar:hover {
   display: block;
-  transition: 3s ease-in-out;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 65px;
+  background-color: black;
 }
 
 
-.nav_bar {
-  padding-top: 3em;
-  display: flex;
-  flex-direction: column;
-  @include mq{
+.nav_bar:hover + .nav_bar{
+  display: block;
+}
 
-  }
+.nav_bar {
+  display: none;
+  flex-direction: column;
 }
 
 .dropdown {
