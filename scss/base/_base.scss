@@ -172,3 +172,12 @@ p {
   text-transform: uppercase;
   letter-spacing: .03em;
 }
+
+.category_content {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  padding-top: 4em;
+  margin: 0 2em;
+  line-height: 2em;
+}
