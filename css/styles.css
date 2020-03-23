@@ -187,9 +187,12 @@ p {
 .inquiry_form li {
   border-bottom: solid;
   height: 4em;
+  width: 30em;
 }
 
-button, input {
+button,
+input,
+textarea {
   background-color: black;
   border-color: black;
 }
