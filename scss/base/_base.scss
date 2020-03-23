@@ -189,6 +189,16 @@ p {
   align-items: center;
 }
 
+.inquiry_form li{
+  border-bottom: solid; 
+  height: 4em;
+}
+
+button, input {
+  background-color: black;
+  border-color: black;
+}
+
 .information{
   line-height: 1.7em;
   text-transform: uppercase;
