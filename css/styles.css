@@ -182,6 +182,7 @@ p {
   flex-direction: column;
   line-height: 4em;
   align-items: center;
+  padding-top: 6em;
 }
 
 .inquiry_form li {
@@ -195,6 +196,7 @@ input,
 textarea {
   background-color: black;
   border-color: black;
+  color: white;
 }
 
 .information {
