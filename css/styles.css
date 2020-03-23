@@ -175,6 +175,15 @@ p {
   padding-top: 100px;
 }
 
+.inquiry_form {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  flex-direction: column;
+  line-height: 4em;
+  align-items: center;
+}
+
 .information {
   line-height: 1.7em;
   text-transform: uppercase;
