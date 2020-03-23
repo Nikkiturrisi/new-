@@ -36,7 +36,6 @@ p {
 .row {
   justify-content:space-between;
   padding:0 20px;
-  margin: 0 10px;
   display: flex;
 }
 
@@ -128,7 +127,6 @@ p {
 
 .plus:hover + .nav_bar, .nav_bar:hover {
   display: block;
-  width: 100%;
   left: 0px;
   top: 65px;
   background-color: black;
@@ -152,13 +150,13 @@ p {
   text-transform: uppercase;
   line-height: 1.9em;
   letter-spacing:.05em;
-  margin: 0 30px;
   @include mq_s{
     flex-direction: row;
   }
 }
 
 .dropdown a {
+
     @include mq_s{
     margin: 0 1em;
 }
