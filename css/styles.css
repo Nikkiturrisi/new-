@@ -150,12 +150,6 @@ p {
   }
 }
 
-.dropdown a.grow {
-  transition: all 0.2s ease-in-out;
-}
-.dropdown a:hover {
-  transform: scale(1.5);
-}
 @media (min-width: 768px) {
   .dropdown a {
     margin: 0 1em;
