@@ -144,6 +144,12 @@ p {
   line-height: 1.9em;
   letter-spacing: 0.05em;
 }
+.dropdown.grow {
+  transition: all 0.2s ease;
+}
+.dropdown:hover {
+  transform: scale(1);
+}
 @media (min-width: 768px) {
   .dropdown {
     flex-direction: row;
