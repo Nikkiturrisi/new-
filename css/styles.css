@@ -100,6 +100,7 @@ p {
   width: auto;
   position: fixed;
   right: 30px;
+  z-index: 99;
 }
 .plus svg {
   display: block;
@@ -111,6 +112,11 @@ p {
   display: block;
   height: 1.5em;
   width: auto;
+  margin-left: 10px;
+}
+
+.logo {
+  z-index: 99;
 }
 
 .plus:hover {
@@ -122,8 +128,9 @@ p {
 .plus:hover + .nav_bar, .nav_bar:hover {
   display: block;
   left: 0px;
-  top: 65px;
   background-color: black;
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav_bar:hover + .nav_bar {
@@ -131,9 +138,12 @@ p {
 }
 
 .nav_bar {
-  display: none;
   flex-direction: column;
   padding-top: 3em;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
 }
 
 .dropdown {
@@ -143,12 +153,7 @@ p {
   text-transform: uppercase;
   line-height: 1.9em;
   letter-spacing: 0.05em;
-}
-.dropdown.grow {
-  transition: all 0.2s ease;
-}
-.dropdown:hover {
-  transform: scale(1);
+  padding: 30px;
 }
 @media (min-width: 768px) {
   .dropdown {
@@ -160,6 +165,10 @@ p {
   .dropdown a {
     margin: 0 1em;
   }
+}
+.dropdown a:hover {
+  transition: 0.03s ease;
+  transform: scale(1.05);
 }
 
 .inquire {
