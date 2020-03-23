@@ -135,6 +135,7 @@ p {
 .nav_bar {
   display: none;
   flex-direction: column;
+  padding-top: 3em;
 }
 
 .dropdown {
