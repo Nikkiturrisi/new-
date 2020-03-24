@@ -235,6 +235,14 @@ textarea:focus {
   line-height: 2em;
 }
 
+.categories {
+    &:hover{
+    transition: .03s ease;
+    transform: scale(1.15);
+}
+}
+
+
 footer {
   padding-top: 9em;
 }

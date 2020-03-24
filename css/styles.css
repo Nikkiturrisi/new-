@@ -232,6 +232,11 @@ textarea:focus {
   line-height: 2em;
 }
 
+.category_content a:hover {
+  transition: 0.03s ease;
+  transform: scale(1.05);
+}
+
 footer {
   padding-top: 9em;
 }
