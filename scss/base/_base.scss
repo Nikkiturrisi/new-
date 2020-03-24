@@ -235,11 +235,9 @@ textarea:focus {
   line-height: 2em;
 }
 
-.categories {
-    &:hover{
+.grow:hover{
     transition: .03s ease;
     transform: scale(1.15);
-}
 }
 
 

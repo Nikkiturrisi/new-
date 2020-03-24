@@ -232,9 +232,9 @@ textarea:focus {
   line-height: 2em;
 }
 
-.category_content a:hover {
+.grow:hover {
   transition: 0.03s ease;
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 footer {
