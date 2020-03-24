@@ -232,7 +232,7 @@ textarea:focus {
   line-height: 2em;
 }
 
-.grow:hover {
+.categories a:hover {
   transition: 0.03s ease;
   transform: scale(1.15);
 }
