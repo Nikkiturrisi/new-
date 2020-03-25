@@ -6,7 +6,7 @@
 
 body {
   background-color: black;
-  color: white;
+  color: $white;
 }
 
 ul {
@@ -17,7 +17,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
+  color: $white;
 }
 
 h3,
@@ -51,7 +51,7 @@ p {
 
 .row_2{
   @include mq_s{
-    max-width: 80%;
+    max-width: 70%;
     align-items: center;
     margin: 0 auto;
   }
@@ -87,6 +87,7 @@ p {
 }
 
 .project_meta {
+   transition: all 1s ease;
   visibility: hidden;
   opacity: 0;
   width:100%;
@@ -219,7 +220,7 @@ input,
 textarea {
   background-color: black;
   border-color: black;
-  color: white;
+  color: $white;
 }
 
  label {

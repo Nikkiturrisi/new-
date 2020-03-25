@@ -53,7 +53,7 @@ p {
 
 @media (min-width: 768px) {
   .row_2 {
-    max-width: 80%;
+    max-width: 70%;
     align-items: center;
     margin: 0 auto;
   }
@@ -85,6 +85,7 @@ p {
 }
 
 .project_meta {
+  transition: all 1s ease;
   visibility: hidden;
   opacity: 0;
   width: 100%;
