@@ -70,7 +70,6 @@
               <a href="category.html">Category</a>
               <a href="contact.html">Contact</a>
               <a href="inquiry.html">Inquiry</a>
-              <a href="">Search</a>
             </div>
           </div> <!--nav_bar-->
 </div>
@@ -89,8 +88,11 @@
   </li>
   <li>
     <label for="msg">Message</label>
-    <input type="text" class="width-dynamic proba dva" id="msg" name="user_message">
+    <textarea id="msg" name="user_message"></textarea>
   </li>
+  <div>
+    <input class="form_button" type="submit" value="Submit">
+  </div>
  </ul>
 
 </form>
@@ -111,32 +113,6 @@
       </div>
     </footer>
 
-<script>
-$.fn.textWidth = function(text, font) {
 
-    if (!$.fn.textWidth.fakeEl) $.fn.textWidth.fakeEl = $('<span>').hide().appendTo(document.body);
-
-    $.fn.textWidth.fakeEl.text(text || this.val() || this.text() || this.attr('placeholder')).css('font', font || this.css('font'));
-
-    return $.fn.textWidth.fakeEl.width();
-};
-
-$('.width-dynamic').on('input', function() {
-    var inputWidth = $(this).textWidth();
-    $(this).css({
-        width: inputWidth
-    })
-}).trigger('input');
-
-
-function inputWidth(elem, minW, maxW) {
-    elem = $(this);
-    console.log(elem)
-}
-
-var targetElem = $('.width-dynamic');
-
-inputWidth(targetElem);
-</script>
 </body>
 </html>

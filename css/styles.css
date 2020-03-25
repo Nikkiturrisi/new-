@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Avenir", sans-serif;
+  font-weight: 100;
 }
 
 body {
@@ -84,8 +85,15 @@ p {
 }
 
 .project_meta {
+  visibility: hidden;
+  opacity: 0;
   width: 100%;
   line-height: 0.5em;
+}
+
+.photo:hover > .project_meta {
+  visibility: visible;
+  opacity: 1;
 }
 
 .product_info {
@@ -196,6 +204,13 @@ p {
   }
 }
 
+.form_button {
+  border: 1px solid;
+  padding: 1em;
+  margin-top: 2em;
+  width: 8em;
+}
+
 button,
 input,
 textarea {
@@ -235,6 +250,14 @@ textarea:focus {
 .links:hover {
   transition: 0.03s ease;
   font-size: 1.2em;
+}
+
+.contact_content {
+  padding-top: 7em;
+  padding-left: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 2em;
 }
 
 footer {
