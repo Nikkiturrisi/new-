@@ -1,3 +1,13 @@
+.nav_bar, .project_meta {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.plus:hover + .nav_bar, .nav_bar:hover, .photo:hover > .project_meta {
+  visibility: visible;
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Avenir", sans-serif;
@@ -29,13 +39,13 @@ p {
 }
 
 .site-header {
-  display: block;
   padding-top: 1.5em;
+  padding-bottom: 0.15em;
 }
 
 .row {
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
 }
 
 .primary,
@@ -43,11 +53,14 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .primary,
 .row_3 {
+    display: flex;
     flex-wrap: nowrap;
+    justify-content: space-around;
   }
 }
 
@@ -59,42 +72,26 @@ p {
   }
 }
 
-.lt_item,
-.rt_item,
-.lt_r2_item,
-.lt_r3_item,
-.rt_r3_item,
+.photo,
 .page_1_img_1,
 .page_1_img_2,
 .page_1_img_3 {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   max-width: 100%;
   margin: 0 10px;
   padding: 20px;
 }
-.lt_img,
-.rt_img,
-.lt_r3_img,
-.rt_r3_img,
-.page_1_rt_img,
-.page_1_lt_img,
-.page_1_bt_img {
+.imgs {
   display: block;
   width: 100%;
 }
 
 .project_meta {
   transition: all 1s ease;
-  visibility: hidden;
-  opacity: 0;
   width: 100%;
   line-height: 0.5em;
-}
-
-.photo:hover > .project_meta {
-  visibility: visible;
-  opacity: 1;
 }
 
 .product_info {
@@ -138,8 +135,6 @@ p {
   display: block;
   left: 0px;
   background-color: black;
-  opacity: 1;
-  visibility: visible;
 }
 
 .nav_bar:hover + .nav_bar {
@@ -147,26 +142,27 @@ p {
 }
 
 .nav_bar {
-  flex-direction: column;
   padding-top: 3em;
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .dropdown {
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  text-transform: uppercase;
-  line-height: 1.9em;
-  letter-spacing: 0.05em;
-  padding: 30px;
 }
 @media (min-width: 768px) {
   .dropdown {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -187,11 +183,12 @@ p {
 .inquiry_form {
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  display: flex;
-  flex-direction: column;
   line-height: 4em;
   align-items: center;
   padding-top: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .inquiry_form li {
@@ -240,12 +237,13 @@ textarea:focus {
 }
 
 .category_content {
-  display: flex;
-  flex-direction: column;
   text-transform: uppercase;
   padding-top: 4em;
   margin: 0 2em;
   line-height: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .links:hover {

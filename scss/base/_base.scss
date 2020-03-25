@@ -30,22 +30,19 @@ p {
 
 
 .site-header {
-  display: block;
   padding-top: 1.5em;
+  padding-bottom: .15em;
 }
 
 .row {
-  justify-content:space-between;
-  display: flex;
+  @include flex($just: space-between);
 }
 
 .primary,
 .row_3{
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
+  @include flex($dir: row, $wrap: wrap);
   @include mq_s{
-    flex-wrap: nowrap;
+    @include flex($wrap: nowrap);
   }
 }
 
@@ -58,16 +55,11 @@ p {
 }
 
 
-.lt_item,
-.rt_item,
-.lt_r2_item,
-.lt_r3_item,
-.rt_r3_item,
+.photo,
 .page_1_img_1,
 .page_1_img_2,
 .page_1_img_3 {
-  display: flex;
-  flex-direction: column;
+  @include flex($dir: column);
   max-width:100%;
   margin: 0 10px;
   padding:20px;
@@ -75,28 +67,20 @@ p {
   }
 }
 
-.lt_img,
-.rt_img,
-.lt_r3_img,
-.rt_r3_img,
-.page_1_rt_img,
-.page_1_lt_img,
-.page_1_bt_img {
+.imgs {
   display: block;
   width: 100%;
 }
 
 .project_meta {
-   transition: all 1s ease;
-  visibility: hidden;
-  opacity: 0;
+  transition: all 1s ease;
   width:100%;
   line-height: .5em;
+  @extend %vishid;
 }
 
 .photo:hover > .project_meta {
-  visibility: visible;
-  opacity: 1;
+  @extend %visvis;
 }
 
 .product_info{
@@ -144,8 +128,7 @@ p {
   display: block;
   left: 0px;
   background-color: black;
-  opacity: 1;
-  visibility: visible;
+  @extend %visvis;
 }
 
 
@@ -154,25 +137,22 @@ p {
 }
 
 .nav_bar {
-  flex-direction: column;
   padding-top: 3em;
-  opacity: 0;
-  visibility: hidden;
   position: absolute;
   width: 100%;
+  @extend %vishid;
+  @include flex;
 }
 
 .dropdown {
-  display:flex;
-  flex-direction: column;
-  justify-content: space-around;
   text-transform: uppercase;
-  line-height: 1.9em;
+  line-height: 2em;
   letter-spacing:.05em;
   padding: 30px;
   @include mq_s{
-    flex-direction: row;
+    @include flex($dir: row);
   }
+  @include flex($dir: column);
 }
 
 .dropdown a {
@@ -192,11 +172,10 @@ p {
 .inquiry_form {
   text-transform: uppercase;
   letter-spacing: .1em;
-  display: flex;
-  flex-direction: column;
   line-height: 4em;
   align-items: center;
   padding-top: 6em;
+  @include flex($dir: column);
 }
 
 .inquiry_form li{
@@ -243,12 +222,11 @@ textarea:focus {
 }
 
 .category_content {
-  display: flex;
-  flex-direction: column;
   text-transform: uppercase;
   padding-top: 4em;
   margin: 0 2em;
   line-height: 2em;
+    @include flex($dir: column);
 }
 
 
