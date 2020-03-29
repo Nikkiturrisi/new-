@@ -1,0 +1,32 @@
+.project_meta {
+  transition: all 1s ease;
+  width:100%;
+  line-height: .5em;
+  @extend %vishid;
+}
+
+
+
+.product_info{
+  padding: 20px 35px;
+  line-height: 1.5em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.category_content {
+  padding-top: 4em;
+  margin: 0 2em;
+  line-height: 2em;
+    @include flex($dir: column);
+}
+
+
+.contact_content {
+  padding-top: 7em;
+  padding-left: 2em;
+  letter-spacing:.05em;
+  line-height: 2em;
+}

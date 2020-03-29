@@ -1,0 +1,19 @@
+.row {
+  @include flex($just: space-between);
+}
+
+.primary,
+.row_3{
+  @include flex($dir: row, $wrap: wrap);
+  @include mq_s{
+    @include flex($wrap: nowrap);
+  }
+}
+
+.row_2{
+  @include mq_s{
+    max-width: 70%;
+    align-items: center;
+    margin: 0 auto;
+  }
+}

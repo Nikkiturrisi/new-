@@ -1,0 +1,53 @@
+.inquire {
+  padding-top: 100px;
+}
+
+.inquiry_form {
+  letter-spacing: .1em;
+  line-height: 4em;
+  align-items: center;
+  padding-top: 6em;
+  @include flex($dir: column);
+}
+
+.inquiry_form li{
+  border-bottom: solid;
+  height: 4em;
+  width: 20em;
+  @include mq_s{
+    width: 30em;
+  }
+}
+
+.form_button {
+  border: 1px solid;
+  padding: 1em;
+  margin-top: 2em;
+  width: 8em;
+}
+
+button,
+input,
+textarea {
+  background-color: black;
+  border-color: black;
+  color: $white;
+}
+
+ label {
+  margin-right: 2em;
+}
+
+textarea {
+  height: 1.2em;
+}
+
+input:focus,
+textarea:focus {
+   outline-color: white;
+}
+
+.information{
+  line-height: 1.7em;
+  letter-spacing: .03em;
+}
